@@ -1,0 +1,27 @@
+[package]
+name = "soulBoundNFT"
+version = "1.0.0"
+authors = []
+
+[addresses]
+MyAddr = "0xf5ae926831d2781aaa2399d11b5317636afccfc7b3541a42a41eac90ab3fbd4f"
+admin_addr = "0x36d714ea1c9fb2e15772cc6ae480f6291f597cc59062dcfd96375e0374e14c6c"
+Std = "0x1"
+aptos_std = "0x1"
+aptos_framework = "0x1"
+aptos_token = "0x3"
+aptos_token_objects = "0x4"
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dependencies.AptosToken]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-token"
+
+[dev-dependencies]
